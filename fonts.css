@@ -1,18 +1,19 @@
 @font-face {
-  font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?yc45i6');
-  src:  url('fonts/icomoon.eot?yc45i6#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?yc45i6') format('truetype'),
-    url('fonts/icomoon.woff?yc45i6') format('woff'),
-    url('fonts/icomoon.svg?yc45i6#icomoon') format('svg');
+  font-family: "icomoon";
+  src: url("fonts/icomoon.eot?ufmdy1");
+  src: url("fonts/icomoon.eot?ufmdy1#iefix") format("embedded-opentype"),
+    url("fonts/icomoon.ttf?ufmdy1") format("truetype"),
+    url("fonts/icomoon.woff?ufmdy1") format("woff"),
+    url("fonts/icomoon.svg?ufmdy1#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: "icomoon" !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -33,4 +34,7 @@
 }
 .icon-search:before {
   content: "\e986";
+}
+.icon-arrow-left2:before {
+  content: "\ea40";
 }
