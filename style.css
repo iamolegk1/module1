@@ -1,7 +1,30 @@
+/* VARIABLES */
+
+:root {
+  /* colors  */
+  --white-color: #ffffff;
+  --yalow-color: #ffcc01;
+  --heder-text-color: #2c4548;
+  --search-input-text-color: #919eb1;
+
+  /* fonts  */
+  --montserrat-font: "Montserrat", sans-serif;
+
+  /* fonts weight  */
+  --normal-fw: 400;
+  --medium-fw: 500;
+  --semi-bold-rw: 600;
+  --bold-fw: 700;
+}
+
+/* COMMON STYLES */
+
 html,
 body {
   margin: 0;
 }
+
+/* CUSTOM STYLES */
 
 .center-layout {
   display: flex;
@@ -16,17 +39,17 @@ body {
   max-width: 1110px;
   width: 100%;
   margin-top: 22px;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--montserrat-font);
 }
 
 .logo {
   display: inline-block;
-  font-weight: 600;
+  font-weight: var(--semi-bold-rw);
   max-width: 70px;
-  color: #2c4548;
   font-size: 24px;
-  margin: 0 auto 0 0;
   line-height: 30px;
+  margin: 0 auto 0 0;
+  color: var(--heder-text-color);
 }
 
 .top-navigation {
@@ -36,9 +59,9 @@ body {
 }
 
 .top-navigation li {
-  font-weight: 400;
+  font-weight: var(--normal-fw);
   font-size: 13px;
-  color: #2c4548;
+  color: var(--heder-text-color);
   margin-right: 30px;
   list-style: none;
 }
@@ -48,11 +71,11 @@ body {
 }
 
 .join-us-buttons-wrapper button {
-  font-family: "Montserrat", sans-serif;
-  cursor: pointer;
+  font-family: var(--montserrat-font);
   border: none;
-  font-weight: 400;
+  font-weight: var(--normal-fw);
   font-size: 13px;
+  cursor: pointer;
 }
 
 .join-us-btn {
@@ -62,9 +85,9 @@ body {
 }
 
 .getting-started-btn {
-  background-color: #ffcc01;
   width: 145px;
   height: 40px;
+  background-color: var(--yalow-color);
   border-radius: 5px;
   padding-left: 5px;
 }
@@ -72,11 +95,11 @@ body {
 /*/////////// BANNER ////////////*/
 
 .banner {
-  font-family: "Montserrat", sans-serif;
   position: relative;
   max-width: 1110px;
   width: 110%;
   height: 630px;
+  font-family: var(--montserrat-font);
   margin-top: 24px;
 }
 
@@ -94,15 +117,15 @@ body {
 .white-part {
   max-width: 208px;
   width: 100%;
-  background-color: #ffffff;
+  background-color: var(--white-color);
 }
 
 .background-location-wrapper {
   position: relative;
-  background-color: #96bece;
   max-width: 960px;
   width: 100%;
   height: 630px;
+  background-color: #96bece;
 }
 
 .location-wrapper {
@@ -113,13 +136,13 @@ body {
   max-width: 590px;
   width: 100%;
   height: 80px;
-  background-color: #ffcc01;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
+  background-color: var(--yalow-color);
+  font-family: var(--montserrat-font);
+  font-weight: var(--semi-bold-rw);
 }
 
 .phone-location-icon {
-  color: #ffffff;
+  color: var(--white-color);
   font-size: 25px;
   margin-right: 30px;
 }
@@ -130,7 +153,7 @@ body {
   justify-content: center;
   width: 51%;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: var(--semi-bold-rw);
 }
 
 .address-wrapper {
@@ -160,7 +183,7 @@ body {
 }
 
 .banner-title {
-  font-weight: 700;
+  font-weight: var(--bold-fw);
   font-size: 58px;
   line-height: 75px;
   margin-bottom: 47px;
@@ -181,30 +204,30 @@ body {
   position: absolute;
   top: 27px;
   left: 30px;
-  color: #919eb1;
+  color: var(--search-input-text-color);
   font-size: 17px;
 }
 
 .banner-input {
-  font-family: "Montserrat", sans-serif;
   width: 305px;
   border: none;
   outline: none;
   background: none;
+  font-family: var(--montserrat-font);
   font-size: 15px;
-  font-weight: 400;
-  color: #919eb1;
-  background-color: #ffffff;
+  font-weight: var(--normal-fw);
+  color: var(--search-input-text-color);
+  background-color: var(--white-color);
   padding-left: 60px;
 }
 
 .search-button {
-  font-family: "Montserrat", sans-serif;
   width: 118px;
   border: none;
-  background-color: #ffcc01;
+  background-color: var(--yalow-color);
+  font-family: var(--montserrat-font);
   font-size: 15px;
-  font-weight: 600;
+  font-weight: var(--semi-bold-rw);
   color: #1f373d;
   cursor: pointer;
 }
