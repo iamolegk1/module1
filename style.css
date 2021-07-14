@@ -348,8 +348,9 @@ body {
 
 .apartments-container {
   display: flex;
-  margin-top: 20px;
   flex-direction: column;
+  padding-top: 53px;
+  padding-bottom: 84px;
   max-width: 1110px;
   width: 100%;
 }
@@ -360,21 +361,15 @@ body {
   font-family: var(--montserrat-font);
   font-weight: var(--semi-bold-rw);
   font-size: 40px;
+  margin-top: 0;
   margin-bottom: 80px;
-}
-
-.apartments-boxes-cards {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 1110px;
-  width: 100%;
 }
 
 .apartments-cards-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  max-width: 1110px;
   width: 100%;
   height: 995px;
   margin-bottom: 100px;
@@ -385,7 +380,7 @@ body {
   flex-direction: column;
   width: 347px;
   height: 500px;
-  background: #b1d7e8;
+  background-color: #b1d7e8;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin-bottom: 35px;
 }
@@ -395,24 +390,33 @@ body {
 }
 
 .apartments-card-info {
-  display: block;
-  height: 122px;
-  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 22px 19px 17px 19px;
+  height: 83px;
+  background: var(--white-color);
 }
 
 .apartments-card-block {
-  padding-top: 22px;
-  max-width: 308px;
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 81px;
-  padding-left: 19px;
 }
 
 .apartments-address {
+  display: block;
   font-family: var(--montserrat-font);
   font-weight: var(--bold-fw);
   font-style: normal;
   font-size: 15px;
+  white-space: wrap;
+}
+
+.apartments-price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .apartments-price {
@@ -425,9 +429,7 @@ body {
 
 .apartments-description-wrapper {
   display: flex;
-  justify-content: flex-end;
-  position: relative;
-  bottom: 50px;
+  align-items: center;
 }
 
 .apartments-description {
@@ -438,14 +440,15 @@ body {
 
 #icon-shower {
   color: #919eb1;
-  padding-right: 5px;
+  margin-right: 5px;
 }
 
 #icon-single_bed {
   color: #919eb1;
-  padding-right: 5px;
+  margin-right: 5px;
   font-size: 24px;
 }
+
 .apartments-description-text {
   font-family: var(--montserrat-font);
   font-weight: var(--normal-fw);
@@ -455,24 +458,22 @@ body {
 
 .apartments-input-wrapper {
   display: flex;
-  position: relative;
   max-width: 1110px;
   width: 100%;
-  margin-bottom: 84px;
 }
 
-.view-apartments {
+.view-apartments-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: var(--white-color);
   width: 252px;
   height: 70px;
   margin-left: 36px;
   border-radius: 4px;
 }
 
-.view-apartments a {
+.view-apartments {
   font-family: var(--montserrat-font);
   font-weight: var(--medium-fw);
   font-size: 15px;
@@ -489,7 +490,9 @@ body {
   margin: 15px auto;
 }
 
-.container-works {
+.how-it-works-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .title-subtitle-works {
@@ -498,11 +501,11 @@ body {
 }
 
 .title-works {
+  display: block;
+  margin-bottom: 17px;
   font-family: var(--montserrat-font);
   font-weight: var(--bold-fw);
   font-size: 40px;
-  width: 300px;
-  height: 33px;
   color: #1f373d;
 }
 
@@ -510,100 +513,118 @@ body {
   font-family: var(--montserrat-font);
   font-weight: var(--medium-fw);
   font-size: 12px;
-  width: 359px;
-  height: 73px;
   color: #1f373d;
-  line-height: 28px;
+  line-height: 29px;
+  padding: 0;
 }
 
 .find-make-cards {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  margin-top: 77px;
+  margin-top: 53px;
+  margin-left: 5px;
 }
 
 .find-your-location-card {
   display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
   width: 346px;
-  height: 375px;
-  background: white;
+  height: 362px;
+  padding-top: 10px;
+  background-color: var(--white-color);
   box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+  overflow: hidden;
+}
+
+.find-your-location-card:hover {
+  color: var(--white-color);
+  background-color: var(--yellow-color);
+}
+
+.find-your-location-card:hover .under-content::after {
+  background-color: var(--white-color);
 }
 
 .number {
   position: absolute;
+  top: -70px;
+  left: -20px;
   font-family: var(--montserrat-font);
   font-weight: var(--bold-fw);
   font-size: 160px;
-  margin-top: -70px;
-  margin-left: -20px;
 }
 
 .find-content-wrapper {
-  margin-top: 145px;
-  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 257px;
+  height: 193px;
+  margin-bottom: 36px;
 }
 
-.title-first-card {
+.title-card {
   font-size: 18px;
   font-family: var(--montserrat-font);
   font-weight: var(--bold-fw);
-  color: black;
+  text-align: start;
+  margin-bottom: 20px;
+}
+
+.content-under-wrapper {
+  display: block;
+  width: 100%;
+  padding-left: 20px;
 }
 
 .content-under-wrapper p {
-  width: 204px;
-  height: 70px;
+  display: block;
   font-family: var(--montserrat-font);
   font-weight: var(--semi-bold-rw);
   font-size: 13px;
-  color: black;
   line-height: 31px;
-  margin-left: 27px;
-  margin-top: 20px;
+  margin-top: 0;
 }
 
-.under-content-first-card {
+.content-under-wrapper p :last-of-type {
+  margin-top: 20px;
+  margin-bottom: 37px;
+}
+
+.under-content {
+  display: block;
+  position: relative;
+  width: fit-content;
   font-size: 13px;
   font-family: var(--montserrat-font);
   font-weight: var(--semi-bold-rw);
-  margin-top: 37px;
-  margin-left: 32px;
 }
 
-.hr-line {
-  width: 87px;
+.under-content::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
   background-color: black;
-  margin-left: 32px;
-}
-
-.hr-line2 {
-  width: 114px;
-  background-color: black;
-  margin-left: 33px;
-}
-
-.hr-line3 {
-  width: 90px;
-  background-color: black;
-  margin-left: 32px;
+  border: none;
 }
 
 .services-works {
-  margin-top: 83px;
-  width: 395px;
+  margin-top: 56px;
+  max-width: 395px;
+  width: 100%;
   font-family: var(--montserrat-font);
   font-weight: var(--normal-fw);
 }
 
 .title-services {
   font-size: 37px;
+  margin-bottom: 0;
 }
 
 .text-services {
-  margin-top: -10px;
+  margin-top: 18px;
   font-size: 13px;
   line-height: 30px;
 }
