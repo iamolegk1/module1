@@ -628,3 +628,153 @@ body {
   font-size: 13px;
   line-height: 30px;
 }
+
+/* //////////////////////////rent-sell-build////////////////////////// */
+
+.rent-sell-build {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  width: 100%;
+  background-color: #b1d7e8;
+  margin-top: 30px;
+  height: 630px;
+}
+
+.rent-sell-build-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-left: 131px;
+  width: 44%;
+  height: 100%;
+  background-color: white;
+}
+
+.renting {
+  display: flex;
+  flex-direction: column;
+  width: 441px;
+  height: 161px;
+  font-family: var(--montserrat-font);
+}
+
+.renting-title {
+  font-size: 25px;
+  font-weight: var(--bold-fw);
+}
+
+.renting-content {
+  padding-top: 27px;
+  padding-bottom: 50px;
+  line-height: 29px;
+  font-size: 13px;
+  font-family: var(--normal-fw);
+}
+
+/* //////////////meet our agents////////////// */
+
+.meet-our-agents {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #f6f5f3;
+  margin-top: 74px;
+}
+
+.meet-our-agents-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 53px;
+  padding-bottom: 84px;
+  max-width: 1110px;
+  width: 100%;
+}
+
+.meet-our-agents-title {
+  display: block;
+  width: 365px;
+  font-family: var(--montserrat-font);
+  font-weight: var(--semi-bold-rw);
+  font-size: 37px;
+  margin-top: 0;
+}
+
+.meet-our-agents-text {
+  font-size: 12px;
+  line-height: 29px;
+}
+
+.meet-our-agents-cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1110px;
+  width: 100%;
+  height: 995px;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+.meet-our-agents-card {
+  display: flex;
+  flex-direction: column;
+  width: 347px;
+  height: 470px;
+  background-color: #cdccce;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.meet-our-agents-card:hover {
+  background: #acd1e1;
+  transform: scale(1.01);
+  transition: transform 0.3s;
+}
+
+.meet-our-agents-img-card-wrapper {
+  margin-bottom: auto;
+}
+
+.meet-our-agents-card-info {
+  display: flex;
+  align-items: center;
+  padding: 18px 16px 30px 24px;
+  height: 45px;
+  background: var(--white-color);
+}
+
+.meet-our-agents-block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.agent-meet-our-agents {
+  display: block;
+  font-family: var(--montserrat-font);
+  font-weight: var(--bold-fw);
+  font-style: normal;
+  font-size: 15px;
+}
+
+.agent-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 15px;
+}
+
+.agent-name {
+  font-family: var(--montserrat-font);
+  font-weight: var(--bold-fw);
+  font-size: 13px;
+  color: #ffcc01;
+}
+
+.agent-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  max-width: 115px;
+  width: 100%;
+}

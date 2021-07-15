@@ -1,10 +1,10 @@
 @font-face {
   font-family: "icomoon";
-  src: url("fonts/icomoon.eot?7hg9y2");
-  src: url("fonts/icomoon.eot?7hg9y2#iefix") format("embedded-opentype"),
-    url("fonts/icomoon.ttf?7hg9y2") format("truetype"),
-    url("fonts/icomoon.woff?7hg9y2") format("woff"),
-    url("fonts/icomoon.svg?7hg9y2#icomoon") format("svg");
+  src: url("fonts/icomoon.eot?yzp3qc");
+  src: url("fonts/icomoon.eot?yzp3qc#iefix") format("embedded-opentype"),
+    url("fonts/icomoon.ttf?yzp3qc") format("truetype"),
+    url("fonts/icomoon.woff?yzp3qc") format("woff"),
+    url("fonts/icomoon.svg?yzp3qc#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -31,6 +31,18 @@
 }
 .icon-shower:before {
   content: "\f2cc";
+}
+.icon-dribbble:before {
+  content: "\e904";
+  color: #ea4c89;
+}
+.icon-facebook:before {
+  content: "\e905";
+  color: #1877f2;
+}
+.icon-twitter1:before {
+  content: "\e906";
+  color: #1da1f2;
 }
 .icon-phone:before {
   content: "\e942";
