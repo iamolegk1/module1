@@ -17,53 +17,69 @@
 <body>
   <class class="center-layout">
     <header class="header">
-      <p class="logo">luxestate</p>
-      <ul class="top-navigation">
-        <li>About</li>
-        <li>Appartments</li>
-        <li>How It Work</li>
-        <li>Agents</li>
-        <li>Contact Us</li>
-      </ul>
-      <div class="join-us-buttons-wrapper">
-        <button class="join-us-btn" type="button">Join Us</button>
-        <button class="getting-started-btn" type="button">
-          Getting Started
-        </button>
+      <div class="container-header">
+        <div class="header-box">
+          <div class="header-logo">
+            <a href="#" class="logo">
+              <img src="./img/luxe.png" alt="luxestate">
+            </a>
+          </div>
+          <div class="header-nav">
+            <div class="header-login">
+              <ul class="login-list">
+                <li>
+                  <a href="#">Join Us</a>
+                </li>
+                <li>
+                  <a href="#" class="btn_header">Getting Started</a>
+                </li>
+              </ul>
+            </div>
+            <nav class="nav">
+              <ul class="nav-list">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Appartments</a></li>
+                <li><a href="#">How It Work</a></li>
+                <li><a href="#">Agents</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </div>
     </header>
-    <section class="banner">
-      <div class="banner-background-layer">
-        <div class="white-part">
-          <div class="scroll-down-wrapper">
-            <i id="icon-arrow-left2" class="icon-arrow-left2"></i>
-            <span class="scroll-down-text">Scroll down</span>
+    <section class="section-banner">
+      <div class="container-banner">
+        <class class="banner-wrap">
+          <div class="banner-form">
+            <h1 class="title">Find Your New Modern Appartment</h1>
+            <form action="#">
+              <div class="form-group">
+                <input type="search" placeholder="Search locations">
+                <button class="btn" type="submit">Search</button>
+              </div>
+            </form>
           </div>
-        </div>
-        <div class="background-location-wrapper">
-          <div class="location-wrapper">
-            <div class="phone-number-wrapper">
-              <i class="icon-phone phone-location-icon"></i>
-              <span>(000)123-4567</span>
+          <div class="banner-description">
+            <div class="link-icon-down">
+              <i id="icon-long-arrow-left" class="icon-long-arrow-left"></i>
+              <a href="#our" class="link-down">Scroll Down</a>
             </div>
-            <div class="address-wrapper">
-              <i class="icon-location phone-location-icon"></i>
-              <span>Melbourne,Australia</span>
+            <div class="location-wrapper">
+              <div class="phone-number-wrapper">
+                <i class="icon-phone phone-location-icon"></i>
+                <span>(000)123-4567</span>
+              </div>
+              <div class="address-wrapper">
+                <i class="icon-location phone-location-icon"></i>
+                <span>Melbourne,Australia</span>
+              </div>
             </div>
           </div>
-        </div>
       </div>
-      <div class="banner-front-layer">
-        <div class="title-input-wrapper">
-          <h1 class="banner-title">Find Your New Modern Apartment</h1>
-          <div class="input-wrapper">
-            <i id="icon-search" class="icon-search"></i>
-            <input class="banner-input" placeholder="Search locations" type="text" />
-            <button class="search-button" type="button">Search</button>
-          </div>
-        </div>
       </div>
     </section>
+    <section class="statistics" id="our"></section>
     <section class="statistics">
       <div class="company-statistics">
         <h3>Our's Company Statistics</h3>
@@ -105,11 +121,12 @@
         <h1 class="apartments-title">More Then 500+ Apartments For Rent</h1>
         <div class="apartments-cards-wrapper">
           <div class="apartments-card">
-            <div class="apartments-img-card-wrapper"></div>
+            <div class="apartments-img-card-wrapper"><a href="#"><img src="img/card1.jpg" alt="img1"></a>
+            </div>
             <div class="apartments-card-info">
               <div class="apartments-card-block">
                 <address class="apartments-address">
-                  Random Street, Apt B453, New York
+                  <a class="random-street" href="#">Random Street, Apt B453, New York</a>
                 </address>
                 <div class="apartments-price-wrapper">
                   <p class="apartments-price">$3,500</p>
@@ -128,11 +145,12 @@
             </div>
           </div>
           <div class="apartments-card">
-            <div class="apartments-img-card-wrapper"></div>
+            <div class="apartments-img-card-wrapper"><a href="#"><img src="img/card2.jpg" alt="img2"></a>
+            </div>
             <div class="apartments-card-info">
               <div class="apartments-card-block">
                 <address class="apartments-address">
-                  Random Street, Apt B453, New York
+                  <a class="random-street" href="#">Random Street, Apt B453, New York</a>
                 </address>
                 <div class="apartments-price-wrapper">
                   <p class="apartments-price">$3,500</p>
@@ -151,11 +169,12 @@
             </div>
           </div>
           <div class="apartments-card">
-            <div class="apartments-img-card-wrapper"></div>
+            <div class="apartments-img-card-wrapper"><a href="#"><img src="img/card3.jpg" alt="img3"></a>
+            </div>
             <div class="apartments-card-info">
               <div class="apartments-card-block">
                 <address class="apartments-address">
-                  Random Street, Apt B453, New York
+                  <a class="random-street" href="#">Random Street, Apt B453, New York</a>
                 </address>
                 <div class="apartments-price-wrapper">
                   <p class="apartments-price">$3,500</p>
@@ -174,11 +193,12 @@
             </div>
           </div>
           <div class="apartments-card">
-            <div class="apartments-img-card-wrapper"></div>
+            <div class="apartments-img-card-wrapper"><a href="#"><img src="img/card4.jpg" alt="img4"></a>
+            </div>
             <div class="apartments-card-info">
               <div class="apartments-card-block">
                 <address class="apartments-address">
-                  Random Street, Apt B453, New York
+                  <a class="random-street" href="#">Random Street, Apt B453, New York</a>
                 </address>
                 <div class="apartments-price-wrapper">
                   <p class="apartments-price">$3,500</p>
@@ -197,11 +217,12 @@
             </div>
           </div>
           <div class="apartments-card">
-            <div class="apartments-img-card-wrapper"></div>
+            <div class="apartments-img-card-wrapper"><a href="#"><img src="img/card5.jpg" alt="img5"></a>
+            </div>
             <div class="apartments-card-info">
               <div class="apartments-card-block">
                 <address class="apartments-address">
-                  Random Street, Apt B453, New York
+                  <a class="random-street" href="#">Random Street, Apt B453, New York</a>
                 </address>
                 <div class="apartments-price-wrapper">
                   <p class="apartments-price">$3,500</p>
@@ -220,11 +241,12 @@
             </div>
           </div>
           <div class="apartments-card">
-            <div class="apartments-img-card-wrapper"></div>
+            <div class="apartments-img-card-wrapper"><a href="#"><img src="img/card6.jpg" alt="img6"></a>
+            </div>
             <div class="apartments-card-info">
               <div class="apartments-card-block">
                 <address class="apartments-address">
-                  Random Street, Apt B453, New York
+                  <a class="random-street" href="#">Random Street, Apt B453, New York</a>
                 </address>
                 <div class="apartments-price-wrapper">
                   <p class="apartments-price">$3,500</p>
@@ -350,12 +372,13 @@
         </div>
         <div class="meet-our-agents-cards-wrapper">
           <div class="meet-our-agents-card">
-            <div class="meet-our-agents-img-card-wrapper"></div>
+            <div class="meet-our-agents-img-card-wrapper"><a href="#"><img src="img/img_agent/agent-1.jpg"
+                  alt="agent1"></a></div>
             <div class="meet-our-agents-card-info">
               <div class="meet-our-agents-block">
-                <p class="agent-meet-our-agents">Agent</p>
+                <a class="agent-meet-our-agents" href="#">Agent</a>
                 <div class="agent-info">
-                  <p class="agent-name">Mr. Luke Skywalker</p>
+                  <a class="agent-name" href="#">Mr. Luke Skywalker</a>
                   <div class="agent-icon-wrapper">
                     <i id="icon-facebook" class="icon-facebook"></i>
                     <i id="icon-twitter1" class="icon-twitter1"></i>
@@ -366,12 +389,13 @@
             </div>
           </div>
           <div class="meet-our-agents-card">
-            <div class="meet-our-agents-img-card-wrapper"></div>
+            <div class="meet-our-agents-img-card-wrapper"><a href="#"><img src="img/img_agent/agent-2.jpg"
+                  alt="agent2"></a></div>
             <div class="meet-our-agents-card-info">
               <div class="meet-our-agents-block">
-                <p class="agent-meet-our-agents">Agent</p>
+                <a class="agent-meet-our-agents" href="#">Agent</a>
                 <div class="agent-info">
-                  <p class="agent-name">Mr. Luke Skywalker</p>
+                  <a class="agent-name" href="#">Mr. Luke Skywalker</a>
                   <div class="agent-icon-wrapper">
                     <i id="icon-facebook" class="icon-facebook"></i>
                     <i id="icon-twitter1" class="icon-twitter1"></i>
@@ -382,12 +406,13 @@
             </div>
           </div>
           <div class="meet-our-agents-card">
-            <div class="meet-our-agents-img-card-wrapper"></div>
+            <div class="meet-our-agents-img-card-wrapper"><a href="#"><img src="img/img_agent/agent-3.jpg"
+                  alt="agent3"></a></div>
             <div class="meet-our-agents-card-info">
               <div class="meet-our-agents-block">
-                <p class="agent-meet-our-agents">Agent</p>
+                <a class="agent-meet-our-agents" href="#">Agent</a>
                 <div class="agent-info">
-                  <p class="agent-name">Mr. Luke Skywalker</p>
+                  <a class="agent-name" href="#">Mr. Luke Skywalker</a>
                   <div class="agent-icon-wrapper">
                     <i id="icon-facebook" class="icon-facebook"></i>
                     <i id="icon-twitter1" class="icon-twitter1"></i>
@@ -401,7 +426,105 @@
       </div>
       </div>
     </section>
-
+    <section class="awesome-add">
+      <div class="awesome-add-wrapper">
+        <div class="background-content-wrapper">
+          <div class="background-icon-warapper">
+            <div class="background-content"></div>
+          </div>
+          <div class="adress-icon-awesome-add">
+            <p>Melburne, Australia</p>
+            <i id="icon-location phone-location-icon" class="icon-location phone-location-icon"></i>
+          </div>
+          <div class="content-awesome-add">
+            <h1 class="super-awesome-add">Super Awesome Add</h1>
+            <p class="text-awesome-add">In this space market-facing, yet UI work flows, or bake it in. Red flag we need
+              a recap by eod, con or whatever comes first agile at the end of the day. Not enough bandwidth closing
+              these latest prospects os
+              like putting socks on an octopus, yet due diligence</p>
+          </div>
+        </div>
+        <div class="background-content-wrapper2">
+          <div class="background-icon-warapper2">
+            <div class="background-content2"></div>
+          </div>
+          <div class="adress-icon-awesome-add2">
+            <p>Melburne, Australia</p>
+            <i id="icon-location phone-location-icon" class="icon-location phone-location-icon"></i>
+          </div>
+          <div class="content-awesome-add2">
+            <h1 class="super-awesome-add2">Super Awesome Add</h1>
+            <p class="text-awesome-add2">In this space market-facing, yet UI work flows, or bake it in. Red flag we need
+              a recap by eod, con or whatever comes first agile at the end of the day. Not enough bandwidth closing
+              these latest prospects os
+              like putting socks on an octopus, yet due diligence</p>
+          </div>
+        </div>
+        <div class="background-content-wrapper3">
+          <div class="background-icon-warapper3">
+            <div class="background-content"></div>
+          </div>
+          <div class="button-content-wrapper">
+            <div class="content-butoon-add3">
+              <h1 class="super-awesome-add">Super Awesome Add</h1>
+              <p class="text-awesome-add">In this space market-facing, yet UI work flows, or bake it in. Red flag we
+                need
+                a recap by eod, con or whatever comes first agile at the end of the day. Not enough bandwidth closing
+                these latest prospects os
+                like putting socks on an octopus, yet due diligence</p>
+              <button class="awesome-button">Show Me More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <div class="footer-block">
+          <div class="footer-logo">
+            <h1>luxestate</h1>
+            <h1>Explore Real Estate</h1>
+          </div>
+          <div class="footer-search">
+            <div class="footer-input-wrapper">
+              <input placeholder="Subscribe To Our Newsletter">
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="footer-links">
+          <div class="footer-links-logo">
+            <h1>luxestate</h1>
+            <p>© 2019 - luxestate, All Right Reserved</p>
+          </div>
+          <div class="footer-link-wrapper">
+            <div class="footer-link">
+              <p>luxestate</p>
+              <a href="#">Agents</a>
+              <a href="#">Hunters</a>
+            </div>
+            <div class="footer-link">
+              <p>company</p>
+              <a href="#">About</a>
+              <a href="#">FAQ</a>
+              <a href="#">Contact</a>
+              <a href="#">Social</a>
+            </div>
+            <div class="footer-link">
+              <p>product</p>
+              <a href="#">Appartments</a>
+              <a href="#">How it Work</a>
+            </div>
+            <div class="footer-link">
+              <p>services</p>
+              <a href="#">Renting</a>
+              <a href="#">Selling</a>
+              <a href="#">Building</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </class>
 </body>
 
