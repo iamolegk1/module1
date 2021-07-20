@@ -31,7 +31,7 @@
                   <a href="#">Join Us</a>
                 </li>
                 <li>
-                  <a href="#" class="btn_header">Getting Started</a>
+                  <a href="#" id="btn_header1" class="btn_header">Getting Started</a>
                 </li>
               </ul>
             </div>
@@ -44,6 +44,23 @@
                 <li><a href="#">Contact Us</a></li>
               </ul>
             </nav>
+            <nav class="mobile-nav">
+              <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+                <ul class="menu__box">
+                  <li><a class="menu__item" href="#">About</a></li>
+                  <li><a class="menu__item" href="#">Appartments</a></li>
+                  <li><a class="menu__item" href="#">How It Work</a></li>
+                  <li><a class="menu__item" href="#">Agents</a></li>
+                  <li><a class="menu__item" href="#">Contact Us</a></li>
+                  <li><a class="menu__item" href="#">Join Us</a></li>
+                  <li><a id="menu__item1" class="menu__item" href="#">Getting Started</a></li>
+                </ul>
+              </div>
+            </nav>
           </div>
         </div>
       </div>
@@ -53,12 +70,10 @@
         <class class="banner-wrap">
           <div class="banner-form">
             <h1 class="title">Find Your New Modern Appartment</h1>
-            <form action="#">
-              <div class="form-group">
-                <input type="search" placeholder="Search locations">
-                <button class="btn" type="submit">Search</button>
-              </div>
-            </form>
+            <div class="form-group">
+              <input type="search" placeholder="Search locations">
+              <button class="btn" type="submit">Search</button>
+            </div>
           </div>
           <div class="banner-description">
             <div class="link-icon-down">
@@ -99,20 +114,20 @@
       </div>
       <div class="statistics-boxes">
         <div class="statistic-value-wrapper">
-          <span class="statistic-value">748</span>
-          <span class="statistic-label">Appartments</span>
+          <p class="statistic-value">748</p>
+          <p class="statistic-label">Appartments</p>
         </div>
         <div class="statistic-value-wrapper">
-          <span class="statistic-value">3854</span>
-          <span class="statistic-label">Clients</span>
+          <p class="statistic-value">3854</p>
+          <p class="statistic-label">Clients</p>
         </div>
         <div class="statistic-value-wrapper">
-          <span class="statistic-value">24</span>
-          <span class="statistic-label">Employees</span>
+          <p class="statistic-value">24</p>
+          <p class="statistic-label">Employees</p>
         </div>
         <div class="statistic-value-wrapper">
-          <span class="statistic-value">14</span>
-          <span class="statistic-label">Awards</span>
+          <p class="statistic-value">14</p>
+          <p class="statistic-label">Awards</p>
         </div>
       </div>
     </section>
@@ -486,9 +501,10 @@
             <h1>Explore Real Estate</h1>
           </div>
           <div class="footer-search">
-            <div class="footer-input-wrapper">
-              <input placeholder="Subscribe To Our Newsletter">
-            </div>
+
+            <input placeholder="Subscribe To Our Newsletter">
+            <button class="icon-arrow-btn"></button>
+
           </div>
         </div>
         <hr>

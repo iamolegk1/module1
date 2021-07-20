@@ -1,10 +1,10 @@
 @font-face {
   font-family: "icomoon";
-  src: url("fonts/icomoon.eot?tlmrcd");
-  src: url("fonts/icomoon.eot?tlmrcd#iefix") format("embedded-opentype"),
-    url("fonts/icomoon.ttf?tlmrcd") format("truetype"),
-    url("fonts/icomoon.woff?tlmrcd") format("woff"),
-    url("fonts/icomoon.svg?tlmrcd#icomoon") format("svg");
+  src: url("fonts/icomoon.eot?np80xt");
+  src: url("fonts/icomoon.eot?np80xt#iefix") format("embedded-opentype"),
+    url("fonts/icomoon.ttf?np80xt") format("truetype"),
+    url("fonts/icomoon.woff?np80xt") format("woff"),
+    url("fonts/icomoon.svg?np80xt#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -28,6 +28,9 @@
 
 .icon-single_bed:before {
   content: "\e900";
+}
+.icon-arrow-long-right:before {
+  content: "\e901";
 }
 .icon-long-arrow-left:before {
   content: "\f177";
