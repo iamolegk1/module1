@@ -23,6 +23,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
   /* scroll-behavior: smooth; */
 }
 html {
@@ -669,8 +670,8 @@ ul {
   justify-content: center;
   align-items: flex-end;
   position: relative;
-  width: 346px;
-  height: 362px;
+  min-width: 346px;
+  min-height: 362px;
   padding-top: 10px;
   background-color: var(--white-color);
   box-shadow: 0 0 10px rgb(0 0 0 / 20%);
@@ -852,7 +853,7 @@ ul {
   justify-content: space-between;
   max-width: 1110px;
   width: 100%;
-  height: 570px;
+  min-height: 570px;
   margin-top: 50px;
 }
 
@@ -934,7 +935,7 @@ ul {
   margin-top: 88px;
   max-width: 1220px;
   width: 100%;
-  height: 1281px;
+  min-height: 1281px;
 }
 
 .awesome-add-wrapper {
@@ -959,7 +960,6 @@ ul {
 .background-content {
   width: 542px;
   height: 332px;
-  background: #8da4be;
   margin-left: 50px;
 }
 
@@ -1010,14 +1010,13 @@ ul {
   background-color: var(--yellow-color);
   font-family: var(--montserrat-font);
   font-weight: var(--bold-fw);
-
-  right: 0px;
-  top: 700px;
-
+  bottom: 0px;
+  top: 290px;
   font-size: 18px;
 }
 
 .background-content-wrapper2 {
+  position: relative;
   display: flex;
   justify-content: space-between;
   margin-top: 90px;
@@ -1026,15 +1025,12 @@ ul {
 .background-content2 {
   width: 542px;
   height: 332px;
-  background: #8da4be;
   margin-right: 58px;
 }
 
 .content-awesome-add2 {
-  max-width: 450px;
-  width: 100%;
+  width: 450px;
   padding-top: 40px;
-  padding-left: 57px;
 }
 
 .text-awesome-add2 {
@@ -1236,7 +1232,7 @@ hr {
 
 /* ////////////////////RESPONSIVE///////////////////////// */
 
-@media (max-width: 1024px) {
+@media (max-width: 1060px) {
   .nav {
     display: none;
   }
@@ -1308,7 +1304,7 @@ hr {
   }
 
   .menu__box :nth-child(6) {
-    padding-top: 60px;
+    padding-top: 40px;
   }
   .menu__box :nth-child(7) {
     padding-top: 60px;
@@ -1317,6 +1313,7 @@ hr {
     padding: 11px 22px;
     border-radius: 2px;
     border-width: 1px;
+    box-shadow: 0px 10px 15px 0px rgb(29 31 36 / 10%);
   }
 
   .menu__box .menu__item:hover {
@@ -1347,6 +1344,7 @@ hr {
     width: 100%;
     height: 100vh;
     z-index: 999998;
+    transition: all 0.3s ease-in-out;
   }
   .menu__btn > span,
   .menu__btn > span::before,
@@ -1359,13 +1357,514 @@ hr {
   .menu__item {
     transition-duration: 0.25s;
   }
+
+  .statistics {
+    display: flex;
+    align-items: center;
+    max-width: 940px;
+  }
+  .statistic-value-wrapper {
+    min-height: 140px;
+  }
+
+  .apartments-container {
+    max-width: 800px;
+    padding-bottom: 60px;
+    min-height: 1850px;
+  }
+  .apartments-cards-wrapper {
+    justify-content: space-around;
+    margin-bottom: 650px;
+  }
+  .apartments-card {
+    margin-bottom: 50px;
+  }
+
+  .how-it-works {
+    max-width: 930px;
+  }
+
+  .find-your-location-card {
+    min-width: 290px;
+    min-height: 330px;
+  }
+
+  .number {
+    font-size: 150px;
+  }
+
+  .meet-our-agents-card {
+    width: 315px;
+    height: 435px;
+  }
+  .meet-our-agents-title {
+    margin-left: 20px;
+  }
+
+  .content-awesome-add2 {
+    padding-left: 0;
+  }
+  .footer-wrapper {
+    max-width: 1000px;
+  }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
+  .meet-our-agents-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .meet-our-agents-cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .meet-our-agents-card {
+    margin-bottom: 40px;
+  }
+
+  .awesome-add {
+    min-height: 1750px;
+    margin-bottom: 40px;
+  }
+  .background-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .super-awesome-add {
+    text-align: center;
+  }
+
+  .adress-icon-awesome-add {
+    left: 360px;
+    top: 300px;
+  }
+
+  .background-content-wrapper2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .background-content-wrapper3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-awesome-add {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .how-it-works-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title-subtitle-works {
+    text-align: center;
+  }
+
+  .find-make-cards {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .find-your-location-card {
+    min-width: 450px;
+    margin-bottom: 30px;
+  }
+
+  .content-butoon-add3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+
+  .services-works {
+    margin-top: 0;
+  }
+
+  .text-awesome-add {
+    text-align: center;
+  }
+
+  .awesome-button {
+    margin-top: 0;
+  }
+
+  .footer-wrapper {
+    max-width: 900px;
+  }
+  .background-content {
+    margin-left: 0;
+  }
+
+  .button-content-wrapper {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .location-wrapper {
+    max-width: 578px;
+    width: 100%;
+  }
+
+  .statistics {
+    max-width: 760px;
+  }
+
+  .statistic-value-wrapper {
+    min-height: 125px;
+  }
+
+  .renting {
+    width: 350px;
+  }
+  .rent-sell-build {
+    height: 670px;
+  }
+
+  .footer-block {
+    display: flex;
+    flex-direction: column;
+    height: 220px;
+  }
+  .footer {
+    padding-bottom: 40px;
+  }
+
+  .footer-logo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-logo h1 {
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  .footer-search {
+    width: 320px;
+  }
+
+  .footer-links-logo {
+    margin-left: 50px;
+  }
+
+  .footer-link-wrapper {
+    margin-left: 180px;
+  }
 }
 
 @media (max-width: 768px) {
+  .location-wrapper {
+    max-width: 522px;
+  }
+
+  .phone-number-wrapper {
+    font-size: 16px;
+  }
+  .address-wrapper {
+    font-size: 16px;
+  }
+
+  .statistics {
+    max-width: 690px;
+  }
+
+  .statistics-boxes {
+    margin-top: 95px;
+  }
+  .company-statistics h3 {
+    font-size: 30px;
+  }
+
+  .company-statistics p {
+    font-size: 11px;
+  }
+
+  .apartments-title {
+    margin-left: 30px;
+  }
+  .apartments-input-wrapper {
+    margin-left: 60px;
+  }
+
+  .input-wrapper {
+    max-width: 400px;
+  }
+  .view-apartments-wrapper {
+    width: 210px;
+  }
+
+  .rent-sell-build-content-wrapper {
+    width: 50%;
+  }
+  .renting-content {
+    font-size: 11px;
+  }
+  .footer-link-wrapper {
+    margin-left: 125px;
+  }
 }
 
 @media (max-width: 480px) {
+  .banner-form .title {
+    font-size: 50px;
+  }
+  .form-group {
+    width: 380px;
+  }
+  .banner-form input {
+    height: 60px;
+    font-size: 14px;
+  }
+  .banner-form .btn {
+    font-size: 13px;
+  }
+  .location-wrapper {
+    max-width: 326px;
+  }
+  .phone-number-wrapper {
+    font-size: 12px;
+  }
+  .phone-location-icon {
+    font-size: 20px;
+    margin-right: 7px;
+  }
+  .address-wrapper {
+    font-size: 12px;
+  }
+  .company-statistics h3 {
+    font-size: 26px;
+    margin-left: 10px;
+  }
+  .company-statistics {
+    max-width: 400px;
+  }
+
+  .adress-icon-awesome-add {
+    left: 75px;
+  }
+
+  .adress-icon-awesome-add {
+    font-size: 16px;
+  }
+
+  .background-content2 {
+    margin-right: 0px;
+  }
+  .adress-icon-awesome-add2 {
+    left: 80px;
+    top: 310px;
+  }
+  .adress-icon-awesome-add2 {
+    font-size: 16px;
+  }
+
+  .awesome-button {
+    width: 220px;
+    height: 65px;
+  }
+  .statistics {
+    display: flex;
+    flex-direction: column;
+  }
+  .statistics-boxes {
+    margin-right: 100px;
+  }
+  .apartments-title {
+    font-size: 30px;
+    margin-left: 90px;
+  }
+  .apartments-cards-wrapper {
+    margin-bottom: 2300px;
+  }
+  .apartments-input-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .view-apartments-wrapper {
+    margin-top: 30px;
+    margin-left: 90px;
+  }
+  .title-services {
+    font-size: 30px;
+  }
+
+  .renting {
+    width: 225px;
+  }
+  .renting-content {
+    font-size: 10px;
+    line-height: 25px;
+  }
+
+  .meet-our-agents-title {
+    font-size: 30px;
+  }
+  .meet-our-agents-text {
+    font-size: 12px;
+  }
+
+  .footer-block h1 {
+    font-size: 35px;
+  }
+  .footer-search {
+    max-width: 100%;
+  }
+  .footer-links {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .footer-link-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 0;
+  }
+  .footer-link a {
+    font-size: 10px;
+  }
+
+  .footer-links-logo {
+    margin-left: 170px;
+    margin-top: 20px;
+  }
+
+  .footer-links-logo h1 {
+    font-size: 30px;
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 375px) {
+  .banner-form .title {
+    font-size: 42px;
+  }
+  .form-group {
+    width: 300px;
+  }
+  .banner-form input {
+    height: 50px;
+  }
+
+  .banner-form input {
+    font-size: 11px;
+    background-position: 30px 50%;
+  }
+  .banner-form .btn {
+    font-size: 10px;
+  }
+  .location-wrapper {
+    height: 70px;
+  }
+  .banner-description {
+    margin-left: 44px;
+  }
+  .phone-location-icon {
+    font-size: 16px;
+    margin-right: 2px;
+  }
+
+  .phone-number-wrapper {
+    font-size: 10px;
+  }
+
+  .address-wrapper {
+    font-size: 10px;
+  }
+  /* .link-down {
+  } */
+  .company-statistics {
+    max-width: 345px;
+  }
+  .statistics-boxes {
+    margin-right: 70px;
+  }
+  .apartments-title {
+    margin-left: 25px;
+  }
+  .apartments-input-wrapper {
+    margin-left: 8px;
+  }
+
+  .input-wrapper {
+    width: 360px;
+    height: 60px;
+  }
+  #icon-search {
+    top: 22px;
+    left: 30px;
+    font-size: 16px;
+  }
+  .banner-input {
+    font-size: 13px;
+  }
+  .search-button {
+    font-size: 13px;
+  }
+  .view-apartments-wrapper {
+    height: 50px;
+    margin-left: 77px;
+  }
+
+  .view-apartments {
+    font-size: 14px;
+  }
+  .title-works {
+    font-size: 30px;
+  }
+  .find-your-location-card {
+    min-width: 320px;
+  }
+  .text-services {
+    min-width: 305px;
+    font-size: 11px;
+  }
+  .title-services {
+    margin-left: 15px;
+  }
+  .text-services {
+    margin-left: 15px;
+  }
+  .rent-sell-build-content-wrapper {
+    padding-left: 35px;
+  }
+  .rent-sell-build-content-wrapper {
+    width: 64%;
+  }
+  .meet-our-agents-text {
+    margin-right: 18px;
+  }
+  .adress-icon-awesome-add {
+    left: 20px;
+    height: 70px;
+  }
+  .text-awesome-add {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .adress-icon-awesome-add2 {
+    left: 20px;
+    height: 70px;
+  }
+  .awesome-button {
+    width: 290px;
+    height: 66px;
+  }
+  .footer-links-logo {
+    margin-left: 120px;
+  }
 }
