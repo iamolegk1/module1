@@ -42,11 +42,13 @@ html {
   width: 100%;
   padding: 28px 0;
 }
+
 .container-header {
   max-width: 1140px;
   padding: 0 15px;
   margin: 0 auto;
 }
+
 .header-box {
   display: flex;
   align-items: center;
@@ -559,6 +561,7 @@ ul {
   text-decoration: none;
   color: black;
 }
+
 .title-input-wrapper {
   display: flex;
   flex-direction: column;
@@ -805,6 +808,7 @@ ul {
   font-size: 25px;
   font-weight: var(--bold-fw);
 }
+
 .renting-title:hover {
   color: var(--yellow-color);
   cursor: pointer;
@@ -1008,6 +1012,7 @@ ul {
   display: flex;
   margin-left: 130px;
 }
+
 .awesome-button {
   display: flex;
   justify-content: center;
@@ -1176,9 +1181,11 @@ hr {
   .nav {
     display: none;
   }
+
   .mobile-nav {
     display: block;
   }
+
   .header-login {
     display: none;
   }
@@ -1207,10 +1214,12 @@ hr {
     height: 3px;
     background-color: var(--heder-text-color);
   }
+
   .menu__btn > span::before {
     content: "";
     top: -8px;
   }
+
   .menu__btn > span::after {
     content: "";
     top: 8px;
@@ -1239,6 +1248,7 @@ hr {
     font-size: 18px;
     text-decoration: none;
   }
+
   .menu__item:hover {
     background-color: #ffffff;
   }
@@ -1246,6 +1256,7 @@ hr {
   .menu__box :nth-child(6) {
     padding-top: 40px;
   }
+
   .menu__box :nth-child(7) {
     padding-top: 60px;
     border: none;
@@ -1269,14 +1280,17 @@ hr {
   #menu__toggle:checked ~ .menu__btn > span {
     transform: rotate(45deg);
   }
+
   #menu__toggle:checked ~ .menu__btn > span::before {
     top: 0;
     transform: rotate(0);
   }
+
   #menu__toggle:checked ~ .menu__btn > span::after {
     top: 0;
     transform: rotate(90deg);
   }
+
   #menu__toggle:checked ~ .menu__box {
     visibility: visible;
     top: 0;
@@ -1286,14 +1300,17 @@ hr {
     z-index: 999998;
     transition: all 0.3s ease-in-out;
   }
+
   .menu__btn > span,
   .menu__btn > span::before,
   .menu__btn > span::after {
     transition-duration: 0.25s;
   }
+
   .menu__box {
     transition-duration: 0.25s;
   }
+
   .menu__item {
     transition-duration: 0.25s;
   }
@@ -1303,6 +1320,7 @@ hr {
     align-items: center;
     max-width: 940px;
   }
+
   .statistic-value-wrapper {
     min-height: 140px;
   }
@@ -1312,10 +1330,12 @@ hr {
     padding-bottom: 60px;
     min-height: 1850px;
   }
+
   .apartments-cards-wrapper {
     justify-content: space-around;
     margin-bottom: 650px;
   }
+
   .apartments-card {
     margin-bottom: 50px;
   }
@@ -1323,6 +1343,7 @@ hr {
   .how-it-works {
     max-width: 930px;
   }
+
   .how-it-works-container {
     align-items: center;
     width: 100%;
@@ -1348,6 +1369,7 @@ hr {
     width: 315px;
     height: 435px;
   }
+
   .meet-our-agents-title {
     margin-left: 20px;
   }
@@ -1355,6 +1377,7 @@ hr {
   .content-awesome-add2 {
     padding-left: 0;
   }
+
   .footer-wrapper {
     max-width: 900px;
   }
@@ -1366,17 +1389,20 @@ hr {
     padding-left: 0;
     align-items: center;
   }
+
   .meet-our-agents-container {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .meet-our-agents-cards-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
   .meet-our-agents-card {
     margin-bottom: 40px;
   }
@@ -1385,6 +1411,7 @@ hr {
     min-height: 1750px;
     margin-bottom: 40px;
   }
+
   .background-content-wrapper {
     display: flex;
     flex-direction: column;
@@ -1410,11 +1437,13 @@ hr {
     flex-direction: column;
     align-items: center;
   }
+
   .statistics {
     display: flex;
     align-items: center;
     max-width: 850px;
   }
+
   .content-awesome-add {
     margin-left: 0;
     margin-right: 0;
@@ -1454,6 +1483,7 @@ hr {
     flex-direction: column;
     height: 220px;
   }
+
   .footer {
     padding-bottom: 40px;
   }
@@ -1480,9 +1510,11 @@ hr {
     margin-left: 180px;
     margin-right: 55px;
   }
+
   .background-content {
     margin-left: 0;
   }
+
   .background-content-wrapper {
     margin-bottom: 0px;
   }
@@ -1501,13 +1533,16 @@ hr {
     max-width: 578px;
     width: 100%;
   }
+
   .banner-form {
     max-width: 500px;
   }
+
   .banner-form input {
     height: 60px;
     font-size: 14px;
   }
+
   .banner-form .btn {
     font-size: 13px;
   }
@@ -1515,27 +1550,34 @@ hr {
   .statistics {
     flex-direction: column;
   }
+
   .statistics-boxes {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     float: unset;
   }
+
   .company-statistics {
     margin-bottom: 40px;
   }
+
   .apartments-input-wrapper {
     max-width: 700px;
   }
+
   .apartments-input-wrapper .input-wrapper {
     max-width: 400px;
   }
+
   .statistic-value-wrapper {
     min-height: 125px;
   }
+
   .renting {
     width: 350px;
   }
+
   .rent-sell-build {
     height: 670px;
   }
@@ -1549,6 +1591,7 @@ hr {
   .phone-number-wrapper {
     font-size: 16px;
   }
+
   .address-wrapper {
     font-size: 16px;
   }
@@ -1560,19 +1603,23 @@ hr {
   .find-your-location-card {
     max-width: 550px;
   }
+
   .apartments-title {
     margin-left: 30px;
   }
+
   .apartments-cards-wrapper {
     flex-direction: column;
     height: 100%;
     align-items: center;
     margin-bottom: 0;
   }
+
   .apartments-input-wrapper {
     flex-direction: column;
     align-items: center;
   }
+
   .apartments-input-wrapper .input-wrapper {
     margin-bottom: 20px;
   }
@@ -1580,6 +1627,7 @@ hr {
   .input-wrapper {
     max-width: 400px;
   }
+
   .view-apartments-wrapper {
     max-width: 400px;
     width: 100%;
@@ -1589,21 +1637,26 @@ hr {
   .renting-content {
     font-size: 11px;
   }
+
   .footer-block h1 {
     font-size: 35px;
   }
+
   .footer-search {
     max-width: 100%;
   }
+
   .footer-links {
     display: flex;
     flex-direction: column-reverse;
   }
+
   .footer-link-wrapper {
     display: flex;
     justify-content: space-around;
     margin-left: 0;
   }
+
   .footer-link a {
     font-size: 10px;
   }
@@ -1624,15 +1677,19 @@ hr {
   .link-icon-down {
     display: none;
   }
+
   .banner-form .title {
     font-size: 50px;
   }
+
   .form-group {
     width: 380px;
   }
+
   .banner-description {
     margin-left: 0;
   }
+
   .location-wrapper {
     width: 100%;
   }
@@ -1640,43 +1697,55 @@ hr {
   .statistics {
     max-width: 430px;
   }
+
   .find-your-location-card {
     max-width: 380px;
   }
+
   .renting-content {
     width: 90%;
   }
 }
+
 @media (max-width: 480px) {
   .link-icon-down {
     display: none;
   }
+
   .banner-form .title {
     font-size: 50px;
   }
+
   .form-group {
     width: 380px;
   }
+
   .banner-description {
     margin-left: 0;
   }
+
   .location-wrapper {
     width: 100%;
   }
+
   .phone-number-wrapper {
     font-size: 12px;
   }
+
   .phone-location-icon {
     font-size: 20px;
     margin-right: 7px;
   }
+
   .address-wrapper {
     font-size: 12px;
   }
+
   .company-statistics h3 {
     font-size: 26px;
     margin-left: 10px;
   }
+
   .company-statistics {
     max-width: 400px;
   }
@@ -1692,10 +1761,12 @@ hr {
   .background-content2 {
     margin-right: 0px;
   }
+
   .adress-icon-awesome-add2 {
     left: 80px;
     top: 310px;
   }
+
   .adress-icon-awesome-add2 {
     font-size: 16px;
   }
@@ -1704,13 +1775,16 @@ hr {
     width: 220px;
     height: 65px;
   }
+
   .statistics {
     display: flex;
     flex-direction: column;
   }
+
   .statistics-boxes {
     margin-right: 100px;
   }
+
   .apartments-title {
     font-size: 30px;
     margin-left: 90px;
@@ -1728,10 +1802,12 @@ hr {
   .renting {
     width: 225px;
   }
+
   .renting-content {
     font-size: 10px;
     line-height: 25px;
   }
+
   .rent-sell-build {
     height: 800px;
   }
@@ -1739,6 +1815,7 @@ hr {
   .meet-our-agents-title {
     font-size: 30px;
   }
+
   .meet-our-agents-text {
     font-size: 12px;
   }
@@ -1748,9 +1825,11 @@ hr {
   .banner-form .title {
     font-size: 42px;
   }
+
   .form-group {
     width: 300px;
   }
+
   .banner-form input {
     height: 50px;
   }
@@ -1759,15 +1838,19 @@ hr {
     font-size: 11px;
     background-position: 30px 50%;
   }
+
   .banner-form .btn {
     font-size: 10px;
   }
+
   .location-wrapper {
     height: 70px;
   }
+
   .banner-description {
     margin-left: 44px;
   }
+
   .phone-location-icon {
     font-size: 16px;
     margin-right: 2px;
@@ -1784,12 +1867,15 @@ hr {
   .company-statistics {
     max-width: 345px;
   }
+
   .statistics-boxes {
     margin-right: 70px;
   }
+
   .apartments-title {
     margin-left: 25px;
   }
+
   .apartments-input-wrapper {
     margin-left: 8px;
   }
@@ -1798,17 +1884,21 @@ hr {
     width: 360px;
     height: 60px;
   }
+
   #icon-search {
     top: 22px;
     left: 30px;
     font-size: 16px;
   }
+
   .banner-input {
     font-size: 13px;
   }
+
   .search-button {
     font-size: 13px;
   }
+
   .view-apartments-wrapper {
     height: 50px;
     margin-left: 77px;
@@ -1817,16 +1907,20 @@ hr {
   .view-apartments {
     font-size: 14px;
   }
+
   .title-works {
     font-size: 30px;
   }
+
   .text-services {
     min-width: 305px;
     font-size: 11px;
   }
+
   .title-services {
     margin-left: 15px;
   }
+
   .text-services {
     margin-left: 15px;
   }
@@ -1834,10 +1928,12 @@ hr {
   .meet-our-agents-text {
     margin-right: 18px;
   }
+
   .adress-icon-awesome-add {
     left: 20px;
     height: 70px;
   }
+
   .text-awesome-add {
     margin-left: 10px;
     margin-right: 10px;
@@ -1847,6 +1943,7 @@ hr {
     left: 20px;
     height: 70px;
   }
+
   .awesome-button {
     width: 290px;
     height: 66px;
